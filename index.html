@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Giuseppe Back end</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.0.7/css/boxicons.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-...tuo_hash" crossorigin="anonymous">
+
+    <style>
+        .sezioni {
+            background-color: rgba(20, 20, 20, 0.85) !important; /* Sfondo nero con maggiore opacità */
+            border-radius: 10px; 
+            padding: 20px; 
+            box-shadow: 0 4px 20px rgba(255, 251, 251, 0.7); /* Ombra per effetto gloss */
+            backdrop-filter: blur(10px); /* Sfondo sfocato per effetto gloss */
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .nav-link {
+            color: #beb5b5; /* Colore del testo */
+            transition: color 0.3s ease; 
+            font-weight: 500; 
+        }
+
+        .nav-link:hover {
+            color: var(--primary-color);
+            text-shadow: 0 0 5px rgba(255, 255, 255, 0.5); 
+        }
+
+        p, li {
+            color: #beb5b5 !important; /* Colore del testo */
+        }
+
+
+
+ 
+
+
+.progress {
+    background-color: rgba(255, 255, 255, 0.1); /* Sfondo della barra di progresso */
+    border-radius: 5px; /* Angoli arrotondati per la barra di progresso */
+    height: 20px; /* Imposta un'altezza fissa per le barre di progresso */
+}
+
+.progress-bar {
+    background-color: var(--primary-color); /* Colore della barra di progresso */
+    color: #fff; /* Colore del testo della barra di progresso */
+    text-align: center; 
+    line-height: 30px; /* Allinea verticalmente il testo */
+    border-radius: 5px; 
+}
+
+
+
+
+/* tutte le card abbiano la stessa altezza */
+.tec-card {
+    background-color: rgba(20, 20, 20, 0.85); /* Sfondo nero con opacità */
+    border-radius: 10px; 
+    margin-bottom: 20px;
+    color: #fff; 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Ombra per effetto gloss */
+    height: 100%; /*  l'altezza della card al 100% */
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between; 
+}
+
+
+.card-img-top {
+    border-radius: 10px 10px 0 0; /* Angoli arrotondati per l'immagine */
+    height: 80px; 
+    object-fit: cover;
+}
+.card:hover{
+    scale:calc(1.1);
+}
+
+/* path/to/your/style.css */
+
+.footer {
+    background-color: rgba(20, 20, 20, 0.85); /* Sfondo scuro con opacità */
+    color: #fff; /* Colore del testo */
+    padding: 20px 0; /* Padding verticale */
+    position: relative; /* Posizionamento relativo */
+}
+
+.footer-left, .footer-center, .footer-right {
+    flex: 1; /* Permette di espandere le sezioni */
+}
+
+.footer-left {
+    text-align: left; /* Allinea a sinistra */
+}
+
+.footer-center {
+    text-align: center; /* Allinea al centro */
+}
+
+.footer-right {
+    text-align: right; /* Allinea a destra */
+}
+
+.footer a {
+    color: #fff; /* Colore delle icone */
+    transition: color 0.3s; /* Transizione per il colore */
+}
+
+.footer a:hover {
+    color: var(--primary-color); /* Cambia colore al passaggio del mouse */
+}
+
+    </style>
+</head>
+<body class="fade-in"> <!-- Aggiunta classe fade-in al body -->
+
+<!-- HEADER -->
+<header class="main-header sticky-top">
+    <nav class="navbar header-nav navbar-expand-lg main-header">
+        <div class="container">
+            <a href="" class="navbar-brand">
+                <h4 class="giuseppe mb-0">Giuseppe <span class="text-primaryy">Denora</span></h4>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbar-collapse-toggle" aria-controls="navbar-collapse-toggle"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbar-collapse-toggle">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a href="#chisono" class="nav-link">Chi Sono</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#progetti" class="nav-link">Progetti</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#competenze" class="nav-link">Competenze</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#attestati" class="nav-link">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contatti" class="nav-link">Contatti</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="link a google calendar" class="colored-btn nav-link">Prenota Una Call</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<section class="about-me">
+    <div class="hero container d-flex justify-content-center align-items-center">
+        <img src="io.jpg" />
+    </div>
+    <div id="chisono" class="container d-flex flex-column justify-content-center align-items-center">
+        <p class="about-text">Ciao! Sono un appassionato di programmazione e tecnologia. Mi piace creare progetti interessanti e imparare sempre cose nuove.</p>
+        <a href=" ----PERCORSO AL CV " class="colored-btn nav-link" id="download" download>Scarica il CV</a>
+    </div>
+</section>
+
+<section id="progetti" class="progetti">
+    <div id="primoProgetto">
+        <hr class="my-4 border-3" style="transition: all 0.3s ease;">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3 p-3 sezioni border-2">
+                    <ul class="nav flex-column">
+                        <li class="nav-item" id="descLink">
+                            <a class="nav-link colored-btn nav-link" href="#descrizione">Descrizione</a>
+                        </li>
+                        <li class="nav-item" id="funzLink">
+                            <a class="nav-link colored-btn nav-link" href="#funzionalita">Funzionalità</a>
+                        </li>
+                        <li class="nav-item" id="techLink">
+                            <a class="nav-link colored-btn nav-link" href="#tecnologia">Tecnologia</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-9 p-4">
+                    <h2 id="descrizione">Descrizione del progetto</h2>
+                    <p>
+                        Questo progetto è un'applicazione online per un rivenditore di PC, con due sezioni principali: Gestione Magazzino e Negozio.
+                    </p>
+
+                    <h3 id="funzionalita">Funzionalità Principali</h3>
+                    <ul>
+                        <li><strong>Gestione Magazzino</strong>: Consente agli amministratori di aggiungere nuovi prodotti specificando il nome, l'URL dell'immagine e la quantità. I prodotti sono visualizzati come card, ognuna con un pulsante per rimuovere facilmente l'articolo dal catalogo.</li>
+                        <li><strong>Gestione Acquisti:</strong> Gli utenti possono selezionare i prodotti desiderati, scegliere la quantità e aggiungerli al carrello. Dopo la conferma dell'acquisto, un riepilogo dell'ordine viene inviato via email al cliente.</li>
+                        <li><strong>Generazione Contenuti Casuali</strong>: Una card viene generata automaticamente con immagini di videogiochi, titoli e prodotti, utilizzando un'API pubblica, offrendo agli utenti contenuti visivi casuali.</li>
+                    </ul>
+
+                    <!-- carosello con descrizione -->
+                    <div id="carouselExampleIndicators" class="carousel slide mb-5 mt-5 rounded border" data-bs-ride="carousel" data-bs-interval="3000" style="border-width: 5px; border-color: #ddd;">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="9"></button>
+                        </div>
+                        <div class="carousel-inner rounded">
+                            <div class="carousel-item active">
+                                <img src="/risorse/1pc.jpg" class="d-block w-100" alt="Immagine 1">
+                                <div class="bg-dark p-2 rounded" style="opacity: 0.75;">
+                                    <h5>Pagina di ingresso</h5>
+                                    <p>da questa pagina possiamo indirizzarci nello store, in cui possiamo effettuare acquisti, o nella gestione del magazzino, in cui possiamo aggiungere, eliminare prodotti.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/risorse/2pc.jpg" class="d-block w-100" alt="Immagine 2">
+                                <div class="bg-dark p-2 rounded" style="opacity: 0.75;">
+                                    <h5>Teconologie utilizzate</h5>
+                                    <p>SPRING BOOT DEVTOOLS, THYMELEAF, SPRING WEB, SPRING DATA JDBC, JAVA MAIL SENDER, MYSQL DRIVER.</p>
+                                </div>
+                            </div>
+                            <!-- Aggiungi altre immagini come necessario -->
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <!-- fine carosello -->
+
+                    <h2 id="tecnologia">Tecnologie utilizzate</h2>
+                    <p>
+                        - <strong>Thymeleaf</strong>: per il templating HTML, supportando la visualizzazione dei dati dinamici.
+                    </p>
+                    <p>
+                        - <strong>Data JDBC</strong>: per l'interazione con il database, facilitando operazioni come inserimento, selezione e cancellazione.
+                    </p>
+                    <p>
+                        - <strong>Spring Web</strong>: per la creazione di API REST, gestendo le richieste e i servizi lato server.
+                    </p>
+                    <p>
+                        - <strong>JavaMailSender</strong>: per la generazione automatica di email per fornire il riepilogo dell'acquisto al cliente.
+                    </p>
+                    <p>
+                        - <strong>Materialize CSS</strong>: per un'interfaccia utente moderna e reattiva.
+                    </p>
+                    <p>
+                        - <strong>Fetch API</strong>: per interagire con servizi esterni e gestire contenuti dinamici, come il recupero di immagini e informazioni sui videogiochi per il Negozio.
+                    </p>
+                    <div class="mt-4">
+                        <a href="https://github.com/GiuseppeDeno/appPCapi" class="colored-btn nav-link">Github files del progetto</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr class="my-4 border-3" style="transition: all 0.3s ease;">
+    <div id="secondoProgetto" class="container-fluid">
+        <div class="row">
+            <div class="col-md-3 p-3 sezioni">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link colored-btn nav-link" id="descLink1" href="#descrizioneBlog">Descrizione</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link colored-btn nav-link" id="funzink1" href="#funzionalitaBlog">Funzionalità</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link colored-btn nav-link" id="techLink1" href="#tecnologiaBlog">Tecnologie Utilizzate</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-md-9 p-4">
+                <h2 id="descrizioneBlog">Descrizione del Progetto Blog</h2>
+                <p>
+                    Questo progetto è una piattaforma per la gestione di articoli di un blog, con funzionalità avanzate che facilitano la scrittura e l’organizzazione dei contenuti.
+                    Gli utenti possono creare e gestire articoli, specificando il titolo, il contenuto, l'URL per l'immagine e la categoria dell'articolo.
+                    È presente anche una barra di ricerca, che permette agli utenti di cercare articoli specifici in base a parole chiave o categorie, rendendo più semplice trovare informazioni rilevanti.
+                </p>
+
+                <h3 id="funzionalitaBlog">Funzionalità Principali</h3>
+                <ul>
+                    <li><strong>Crea Articolo</strong>: Permette agli utenti di aggiungere un nuovo articolo con titolo, contenuto, immagine e categoria.</li>
+                    <li><strong>Modifica e Cancella</strong>: Gli articoli possono essere modificati o eliminati per mantenere le informazioni aggiornate.</li>
+                    <li><strong>Ricerca Articoli</strong>: Una barra di ricerca che consente agli utenti di filtrare e trovare articoli in base a parole chiave o categorie.</li>
+                    <li><strong>Barra di Sicurezza</strong>: Include opzioni di login e gestione per limitare l’accesso alle funzioni amministrative del blog.</li>
+                </ul>
+
+                <h3 class="mt-5 mb-5">Immagini progetto Blog</h3>
+                <div id="carouselExampleIndicators" class="carousel slide mt-5 mb-5 rounded border" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="/risorse/1.jpg" class="d-block w-100" alt="Immagine 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/risorse/2.jpg" class="d-block w-100" alt="Immagine 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/risorse/3.jpg" class="d-block w-100" alt="Immagine 3">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="risorse/5.jpg" class="d-block w-100" alt="Immagine 4">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="risorse/6.jpg" class="d-block w-100" alt="Immagine 5">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="risorse/databaseITA.jpg" class="d-block w-100" alt="Immagine 6">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+                <div class="mt-4">
+                    <a href="risorse/video.mp4" target="_blank" class="colored-btn nav-link">Guarda il Video del Progetto</a>
+                </div>
+
+                <h3 id="tecnologiaBlog" class="mt-5">Tecnologie Utilizzate</h3>
+                <p>
+                    - <strong>JPA e Hibernate</strong>: per la gestione del database, facilitando il salvataggio, la modifica e la cancellazione degli articoli.
+                </p>
+                <p>
+                    - <strong>Spring Security</strong>: per gestire l’autenticazione e autorizzazione degli utenti.
+                </p>
+                <p>
+                    - <strong>Thymeleaf</strong>: per il rendering delle pagine HTML, permettendo di visualizzare i dati dinamici.
+                </p>
+                <p>
+                    - <strong>Bootstrap</strong>: per lo stile e il layout responsive, incluso un design moderno e pulito.
+                </p>
+                <div class="mt-4">
+                    <a href="https://github.com/GiuseppeDeno/blogWithSearchAndSecurity" class="colored-btn nav-link">Github files del progetto</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="competenze">
+    <div class="container">
+        <h2 class="text-center text-primaryy">Competenze Tecnologiche</h2>
+        <div class="row mt-5">
+           
+            <div class="col-md-4 pb-5">
+                <div class="card tec-card text-center align-items-center">
+                    <img src="/imgTecnologie/htmlR.png "alt="HTML" class="card-img-top" style="width: 80px; object-fit: cover; padding-top: 20px;">
+                    <div class="card-body">
+                        <h5 class="card-title">HTML</h5>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+            <!-- Aggiungi altre card per le altre tecnologie -->
+            <div class="col-md-4 pb-5"">
+                <div class="card tec-card text-center align-items-center">
+                    <img src="/imgTecnologie/cssR.png" alt="JCSS" class="card-img-top" style="width: 80px; object-fit: cover; padding-top: 20px;">
+                    <div class="card-body">
+                        <h5 class="card-title">CSS</h5>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 pb-5"">
+                <div class="card tec-card text-center align-items-center">
+                    <img src="/imgTecnologie/bootstrapR.png" alt="Bootstrap" class="card-img-top " style="width: 80px; object-fit: cover; padding-top: 20px;">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Bootstrap</h5>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 pb-5"">
+                <div class="card tec-card text-center align-items-center">
+                    <img src="/imgTecnologie/materializeRE.png" alt="Materialize" class="card-img-top " style="width: 80px; object-fit: cover; padding-top: 20px;">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Materialize</h5>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 50%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">50%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 pb-5"">
+                <div class="card tec-card text-center align-items-center">
+                    <img src="/imgTecnologie/javascriptREM.png" alt="JavaScript" class="card-img-top" style="width: 80px; object-fit: cover; padding-top: 20px;">
+                    <div class="card-body">
+                        <h5 class="card-title">JavaScript</h5>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 pb-5"">
+                <div class="card tec-card text-center align-items-center">
+                    <img src="/imgTecnologie/fetchAPI.png" alt="fetchAPI" class="card-img-top" style="width: 80px; object-fit: cover; padding-top: 20px;">
+                    <div class="card-body">
+                        <h5 class="card-title">FetchApi</h5>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 pb-5"">
+                <div class="card tec-card text-center align-items-center">
+                    <img src="/imgTecnologie/Java_Logo.svg" alt="Java" class="card-img-top" style="width: 80px; object-fit: cover; padding-top: 20px;">
+                    <div class="card-body">
+                        <h5 class="card-title">JavS</h5>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 40%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">40%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 pb-5"">
+                <div class="card tec-card text-center align-items-center">
+                    <img src="/imgTecnologie/JavaFX.png" alt="JavaSFX class="card-img-top" style="width: 80px; object-fit: cover; padding-top: 20px;">
+                    <div class="card-body">
+                        <h5 class="card-title">JavaFX</h5>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 pb-5"">
+                <div class="card tec-card text-center align-items-center">
+                    <img src="/imgTecnologie/springWeb-removebg-preview.png" alt="SpringBoot" class="card-img-top" style="width: 80px; object-fit: cover; padding-top: 20px;">
+                    <div class="card-body">
+                        <h5 class="card-title">SpringBoot</h5>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 pb-5"">
+                <div class="card tec-card text-center align-items-center">
+                    <img src="/imgTecnologie/thymleafREMOVE.png" alt="theamleaf" class="card-img-top" style="width: 80px; object-fit: cover; padding-top: 20px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Thymleaf </h5>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 pb-5"">
+                <div class="card tec-card text-center align-items-center">
+                    <img src="/imgTecnologie/springbootmailServiceREM.png" alt="Spring mail service" class="card-img-top" style="width: 80px; object-fit: cover; padding-top: 20px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Spring Mail Service</h5>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 pb-5"">
+                <div class="card tec-card text-center align-items-center">
+                    <img src="/imgTecnologie/jpabisRE,png.png" alt="JPA" class="card-img-top" style="width: 80px; object-fit: cover; padding-top: 20px;">
+                    <div class="card-body">
+                        <h5 class="card-title">JPA</h5>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 40%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">40%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 pb-5"">
+                <div class="card tec-card text-center align-items-center">
+                    <img src="/imgTecnologie/jdbcR.png" alt="Jdbc" class="card-img-top" style="width: 80px; object-fit: cover; padding-top: 20px;">
+                    <div class="card-body">
+                        <h5 class="card-title">JPDB </h5>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 40%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">40%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+</section>
+
+<section id="education" class="container d-flex justify-content-center">
+   
+    <div class="d-flex justify-content-center text-center">
+       
+        <img src="/risorse/Attestato.png" alt="Jdbc" class="img-fluid mx-auto" style="max-width: 800px; height: auto; object-fit: cover; padding-top: 20px;">
+    </div>
+</section>
+
+<footer class="footer mt-5" id="contatti">
+    <div class="container d-flex justify-content-between align-items-center">
+        <div class="footer-left">
+            <p class="mb-0">Copyright © Giuseppe Denora 2024</p>
+        </div>
+        <div class="footer-center text-center">
+            <p class="mb-0">giuseppedeno@gmail.com</p>
+        </div>
+        <div class="footer-right">
+            <a href="https://github.com/GiuseppeDeno" target="_blank" class="text-decoration-none mx-2">
+                <i class='bx bxl-github' style="font-size: 24px;"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/giuseppe-denora/" target="_blank" class="text-decoration-none mx-2">
+                <i class='bx bxl-linkedin' style="font-size: 24px;"></i>
+            </a>
+            <a href="https://www.facebook.com/giuseppe.denora" target="_blank" class="text-decoration-none mx-2">
+                <i class='bx bxl-facebook' style="font-size: 24px;"></i>
+            </a>
+            <a href="#" class="text-decoration-none mx-2" id="scrollToTop">
+                <i class='bx bx-arrow-to-top' style="font-size: 24px;"></i>
+            </a>
+        </div>
+    </div>
+</footer>
+
+
+<script>
+    let lastScrollTop = 0;
+    const navbar = document.querySelector('.main-header');
+
+    window.addEventListener('scroll', function() {
+        let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+        if (scrollTop > lastScrollTop) {
+            // Scorrendo verso il basso // Nascondi la navbar
+            navbar.style.top = "-100px"; 
+        } else {
+            // Scorrendo verso l'alto // Mostra la navbar
+            navbar.style.top = "0"; 
+        }
+        lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // nei disp mobili lo scroll puo essere negativo 
+    });
+
+
+</script>
+
+
+
+
+
+
+
+
+
+<!--- 
+    /* scrollTop <= 0:  controlla se scrollTop è minore o uguale a zero. scrollTop può a volte assumere valori negativi su dispositivi mobili, oppure può diventare zero quando si arriva all'inizio della pagina.
+
+? 0 : scrollTop: Questo è un operatore ternario. Significa:
+
+    Se scrollTop è minore o uguale a zero, assegna 0 a lastScrollTop.
+    Altrimenti, assegna il valore di scrollTop a lastScrollTop.*/
+-->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
