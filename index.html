@@ -9,21 +9,22 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.0.7/css/boxicons.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-...tuo_hash" crossorigin="anonymous">
 
     <style>
         .sezioni {
-            background-color: rgba(20, 20, 20, 0.85) !important; /* Sfondo nero con maggiore opacità */
-            border-radius: 10px; 
+            background-color: rgba(20, 20, 20, 0.85) !important; 
+           /* border-radius: 10px; */
             padding: 20px; 
-            box-shadow: 0 4px 20px rgba(255, 251, 251, 0.7); /* Ombra per effetto gloss */
-            backdrop-filter: blur(10px); /* Sfondo sfocato per effetto gloss */
+            box-shadow: 0 4px 20px rgba(255, 251, 251, 0.7); 
+            backdrop-filter: blur(10px); /* effetto gloss */
             border: 1px solid rgba(255, 255, 255, 0.1);
         }
 
         .nav-link {
-            color: #beb5b5; /* Colore del testo */
+            color: #beb5b5; 
             transition: color 0.3s ease; 
             font-weight: 500; 
         }
@@ -34,7 +35,7 @@
         }
 
         p, li {
-            color: #beb5b5 !important; /* Colore del testo */
+            color: #beb5b5 !important; 
         }
 
 
@@ -44,13 +45,13 @@
 
 .progress {
     background-color: rgba(255, 255, 255, 0.1); /* Sfondo della barra di progresso */
-    border-radius: 5px; /* Angoli arrotondati per la barra di progresso */
-    height: 20px; /* Imposta un'altezza fissa per le barre di progresso */
+    border-radius: 5px; 
+    height: 20px; 
 }
 
 .progress-bar {
-    background-color: var(--primary-color); /* Colore della barra di progresso */
-    color: #fff; /* Colore del testo della barra di progresso */
+    background-color: var(--primary-color); 
+    color: #fff; 
     text-align: center; 
     line-height: 30px; /* Allinea verticalmente il testo */
     border-radius: 5px; 
@@ -82,43 +83,43 @@
     scale:calc(1.1);
 }
 
-/* path/to/your/style.css */
+
 
 .footer {
-    background-color: rgba(20, 20, 20, 0.85); /* Sfondo scuro con opacità */
-    color: #fff; /* Colore del testo */
-    padding: 20px 0; /* Padding verticale */
-    position: relative; /* Posizionamento relativo */
+    background-color: rgba(20, 20, 20, 0.85); 
+    color: #fff; 
+    padding: 20px 0; 
+    position: relative; 
 }
 
 .footer-left, .footer-center, .footer-right {
-    flex: 1; /* Permette di espandere le sezioni */
+    flex: 1; /*  espandere le sezioni */
 }
 
 .footer-left {
-    text-align: left; /* Allinea a sinistra */
+    text-align: left; 
 }
 
 .footer-center {
-    text-align: center; /* Allinea al centro */
+    text-align: center; 
 }
 
 .footer-right {
-    text-align: right; /* Allinea a destra */
+    text-align: right; 
 }
 
 .footer a {
     color: #fff; /* Colore delle icone */
-    transition: color 0.3s; /* Transizione per il colore */
+    transition: color 0.3s; 
 }
 
 .footer a:hover {
-    color: var(--primary-color); /* Cambia colore al passaggio del mouse */
+    color: var(--primary-color);
 }
 
     </style>
 </head>
-<body class="fade-in"> <!-- Aggiunta classe fade-in al body -->
+<body class="fade-in"> 
 
 <!-- HEADER -->
 <header class="main-header sticky-top">
@@ -145,13 +146,13 @@
                         <a href="#competenze" class="nav-link">Competenze</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#attestati" class="nav-link">Education</a>
+                        <a href="#education" class="nav-link">Education</a>
                     </li>
                     <li class="nav-item">
                         <a href="#contatti" class="nav-link">Contatti</a>
                     </li>
                     <li class="nav-item">
-                        <a href="link a google calendar" class="colored-btn nav-link">Prenota Una Call</a>
+                        <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Call+with+me&details=Prenota+una+call&location=Online&dates=20241106T090000Z/20241106T100000Z" class="colored-btn nav-link" target="_blank">Prenota Una Call</a>
                     </li>
                 </ul>
             </div>
@@ -160,16 +161,16 @@
 </header>
 
 <section class="about-me">
-    <div class="hero container d-flex justify-content-center align-items-center">
+    <div class="hero container d-flex justify-content-center align-items-center  fade-in-up">
         <img src="io.jpg" />
     </div>
     <div id="chisono" class="container d-flex flex-column justify-content-center align-items-center">
-        <p class="about-text">Ciao! Sono un appassionato di programmazione e tecnologia. Mi piace creare progetti interessanti e imparare sempre cose nuove.</p>
+        <p class="about-text">Ciao! Sono un appassionato di programmazione e tecnologia. Mi piace creare progetti interessanti e imparare sempre cose nuove. Front End Developer</p>
         <a href=" ----PERCORSO AL CV " class="colored-btn nav-link" id="download" download>Scarica il CV</a>
     </div>
 </section>
 
-<section id="progetti" class="progetti">
+<section id="progetti" class="progetti ">
     <div id="primoProgetto">
         <hr class="my-4 border-3" style="transition: all 0.3s ease;">
         <div class="container-fluid">
@@ -188,7 +189,7 @@
                     </ul>
                 </div>
 
-                <div class="col-md-9 p-4">
+                <div class="col-md-9 p-4  fade-in-left">
                     <h2 id="descrizione">Descrizione del progetto</h2>
                     <p>
                         Questo progetto è un'applicazione online per un rivenditore di PC, con due sezioni principali: Gestione Magazzino e Negozio.
@@ -202,7 +203,7 @@
                     </ul>
 
                     <!-- carosello con descrizione -->
-                    <div id="carouselExampleIndicators" class="carousel slide mb-5 mt-5 rounded border" data-bs-ride="carousel" data-bs-interval="3000" style="border-width: 5px; border-color: #ddd;">
+                    <div id="carouselExampleIndicators" class="carousel slide mb-5 mt-5 rounded border" data-bs-ride="carousel" data-bs-interval="3000" style="border-width: 5px; border-color: #ddd;  ">
                         <div class="carousel-indicators">
                             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true"></button>
                             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
@@ -316,21 +317,45 @@
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img src="/risorse/1.jpg" class="d-block w-100" alt="Immagine 1">
+                            <div class="bg-dark p-2 rounded" style="opacity: 0.75;">
+                                <h5>Sezione di gestione articoli </h5>
+                                <p>attraverso un form inseriamo un articolo con titolo contenuto categoria ed immagine</p>
+                            </div>
                         </div>
                         <div class="carousel-item">
                             <img src="/risorse/2.jpg" class="d-block w-100" alt="Immagine 2">
+                            <div class="bg-dark p-2 rounded" style="opacity: 0.75;">
+                                <h5>Gestione articoli</h5>
+                                <p>gli articoli esistenti possono essere modificati o cambiati di categoria  </p>
+                            </div>
                         </div>
                         <div class="carousel-item">
                             <img src="/risorse/3.jpg" class="d-block w-100" alt="Immagine 3">
+                            <div class="bg-dark p-2 rounded" style="opacity: 0.75;">
+                                <h5>Pagina Indice</h5>
+                                <p>La homepage presenta gli articoli come cards e una sidebar con le categorie selezionabili </p>
+                            </div>
                         </div>
                         <div class="carousel-item">
                             <img src="risorse/5.jpg" class="d-block w-100" alt="Immagine 4">
+                            <div class="bg-dark p-2 rounded" style="opacity: 0.75;">
+                                <h5>Esempio di selezione tramite categoria </h5>
+                                <p>selezionato categoria Spettacolo, appaiono gli articoli corrispondenti </p>
+                            </div>
                         </div>
                         <div class="carousel-item">
                             <img src="risorse/6.jpg" class="d-block w-100" alt="Immagine 5">
+                            <div class="bg-dark p-2 rounded" style="opacity: 0.75;">
+                                <h5>Esempio di selezione tramite categoria</h5>
+                                <p>articoli di Formula 1 </p>
+                            </div>
                         </div>
                         <div class="carousel-item">
                             <img src="risorse/databaseITA.jpg" class="d-block w-100" alt="Immagine 6">
+                            <div class="bg-dark p-2 rounded" style="opacity: 0.75;">
+                                <h5>Schema del database</h5>
+                                <p>Lusando Jpa la classe articolo genera automaticamente il database</p>
+                            </div>
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -366,6 +391,138 @@
             </div>
         </div>
     </div>
+    <div id="progetto3">
+        <hr class="my-4 border-3" style="transition: all 0.3s ease;">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3 p-3 sezioni border-2">
+                    <ul class="nav flex-column">
+                        <li class="nav-item" id="descLink3">
+                            <a class="nav-link colored-btn nav-link" href="#descrizione3">Descrizione</a>
+                        </li>
+                        <li class="nav-item" id="funzLink3">
+                            <a class="nav-link colored-btn nav-link" href="#funzionalita3">Funzionalità</a>
+                        </li>
+                        <li class="nav-item" id="techLink3">
+                            <a class="nav-link colored-btn nav-link" href="#tecnologia3">Tecnologie</a>
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="col-md-9 p-4">
+                    <h2 id="descrizione3">Descrizione del progetto Learning Courses</h2>
+                    <p>
+                        Il progetto <strong>Video Learning Courses</strong> è un'applicazione web costruita con <strong>Spring Boot</strong>. Permette agli utenti di acquistare piani di abbonamento per corsi video. L'app presenta un sistema di carrello, un processo di conferma via email per gli acquisti e un dashboard per gli amministratori per gestire i piani disponibili e visualizzare le statistiche di vendita.
+                    </p>
+                    
+    
+                    <h3 id="funzionalita3">Funzionalità Principali</h3>
+                    <ul>
+                        <li><strong>Pagina Indice</strong>: La homepage presenta un <strong>carosello di immagini</strong> e diverse <strong>card</strong> che mostrano i vari piani di abbonamento disponibili, categorizzati in <strong>Base</strong>, <strong>Medio</strong> e <strong>Deluxe</strong>.</li>
+                        <li><strong>Sezione Store (Corsi)</strong>: Nella sezione <strong>Corsi</strong>, gli utenti possono acquistare uno o più piani. Quando un piano viene aggiunto al carrello, la quantità viene aggiornata dinamicamente nella <strong>navbar</strong>.</li>
+                        <li><strong>Carrello e Conferma di Acquisto</strong>: Una volta selezionati i piani, gli utenti possono procedere alla pagina di <strong>conferma di acquisto</strong>, dove possono inserire il loro <strong>indirizzo email</strong> per ricevere una conferma via email.</li>
+                        <li><strong>Dashboard Amministrativa - Gestione Piani</strong>: Gli amministratori hanno accesso a un <strong>dashboard</strong> dove possono aggiungere nuovi piani di abbonamento, ognuno con fino a 4 video. I piani possono anche essere <strong>eliminati</strong> in questa sezione.</li>
+                        <li><strong>Statistiche di Vendita</strong>: Il dashboard include un <strong>grafico a torta</strong> che utilizza <strong>Google Charts</strong> per visualizzare le percentuali di vendita di ciascun piano. Le statistiche si aggiornano automaticamente in base agli ordini effettuati.</li>
+                    </ul>
+                     <!-- Carosello con descrizione -->
+                     <div id="carouselExampleIndicators3" class="carousel slide mb-5 mt-5 rounded border" data-bs-ride="carousel" data-bs-interval="3000" style="border-width: 5px; border-color: #ddd;">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="0" class="active" aria-current="true"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="3"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="4"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="5"></button>
+                           
+                        </div>
+                        <div class="carousel-inner rounded">
+                            <div class="carousel-item active">
+                                <img src="risorse/1c.jpg" class="d-block w-100" alt="Carosello 3">
+                                <div class="bg-dark p-2 rounded" style="opacity: 0.75;">
+                                    <h5>Pagina Indice</h5>
+                                    <p>La homepage presenta un carosello di immagini </p>
+                                </div>
+                            </div>
+                            <div class="carousel-item active">
+                                <img src="risorse/2c.jpg" class="d-block w-100" alt="Carosello 3">
+                                <div class="bg-dark p-2 rounded" style="opacity: 0.75;">
+                                    <h5>Pagina Indice</h5>
+                                    <p> diverse card che mostrano i vari piani di abbonamento disponibili.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item active">
+                                <img src="risorse/3c.jpg" class="d-block w-100" alt="Carosello 3">
+                                <div class="bg-dark p-2 rounded" style="opacity: 0.75;">
+                                    <h5>Store</h5>
+                                    <p>Dallo store si possono acquistare i piani Di Abbonamento</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="risorse/4c.jpg" class="d-block w-100" alt="Carosello 3">
+                                <div class="bg-dark p-2 rounded" style="opacity: 0.75;">
+                                    <h5>Carrello</h5>
+                                    <p>Una volta selezionati i piani, gli utenti possono procedere alla pagina di conferma di acquisto.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="risorse/5c.jpg" class="d-block w-100" alt="Carosello 2">
+                                <div class="bg-dark p-2 rounded" style="opacity: 0.75;">
+                                    <h5>Pagina di riepilogo</h5>
+                                    <p>Pagina di riepilogo in cui è possibile inserire una mail che presenta un resoconto di acquisto.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="risorse/7c.jpg" class="d-block w-100" alt="Carosello 3">
+                                <div class="bg-dark p-2 rounded" style="opacity: 0.75;">
+                                    <h5>Dashboard Amministrativa</h5>
+                                    <p>Gli amministratori possono gestire i piani di abbonamento e visualizzare le statistiche di vendita.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <!-- fine carosello -->
+    
+                    <h2 id="tecnologia3">Tecnologie utilizzate</h2>
+                    <p>
+                        - <strong>Spring Boot</strong>: per la creazione del backend e la gestione dell'intero ciclo di vita dell'applicazione.
+                    </p>
+                    <p>
+                        - <strong>JDBC</strong>: per gestire la connessione e le query al database MySQL.
+                    </p>
+                    <p>
+                        - <strong>Thymeleaf</strong>: per il templating HTML dinamico.
+                    </p>
+                    <p>
+                        - <strong>Bootstrap</strong>: per un design frontend moderno e reattivo.
+                    </p>
+                    <p>
+                        - <strong>MySQL</strong>: per gestire i dati relativi ai piani di abbonamento e agli ordini.
+                    </p>
+                    <p>
+                        - <strong>Google Charts</strong>: per visualizzare le statistiche di vendita con grafici a torta.
+                    </p>
+                    <p>
+                        - <strong>Servizio Email</strong>: per inviare conferme via email agli utenti dopo l'acquisto.
+                    </p>
+    
+                    
+    
+                    <div class="mt-4">
+                        <a href="https://github.com/GiuseppeDeno/VideoCorsiLearning" class="colored-btn nav-link">Github files del progetto</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </section>
 <section id="competenze">
     <div class="container">
@@ -527,7 +684,7 @@
 
 <section id="education" class="container d-flex justify-content-center">
    
-    <div class="d-flex justify-content-center text-center">
+    <div class="d-flex justify-content-center text-center fade-in-up">
        
         <img src="/risorse/Attestato.png" alt="Jdbc" class="img-fluid mx-auto" style="max-width: 800px; height: auto; object-fit: cover; padding-top: 20px;">
     </div>
@@ -548,7 +705,7 @@
             <a href="https://www.linkedin.com/in/giuseppe-denora/" target="_blank" class="text-decoration-none mx-2">
                 <i class='bx bxl-linkedin' style="font-size: 24px;"></i>
             </a>
-            <a href="https://www.facebook.com/giuseppe.denora" target="_blank" class="text-decoration-none mx-2">
+            <a href="https://it-it.facebook.com/giuseppedenoraalt target="_blank" class="text-decoration-none mx-2">
                 <i class='bx bxl-facebook' style="font-size: 24px;"></i>
             </a>
             <a href="#" class="text-decoration-none mx-2" id="scrollToTop">
@@ -578,6 +735,35 @@
 
 
 </script>
+
+
+<script>
+//https://www.itzami.com/blog/boost-your-css-animations-with-intersection-observer-api
+// metodo `IntersectionObserver` per rilevare quando gli elementi entrano nella visualizzazione:
+
+
+// Selettori per tutti gli elementi da animare
+const fadeElements = document.querySelectorAll('.fade-in-right, .fade-in-left, .fade-in-up, .fade-in-down');
+
+// Imposta l'osservatore per quando l'elemento entra in visualizzazione
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            // Aggiunge la classe per attivare l'animazione
+            entry.target.classList.add('animate');
+            // Interrompe l'osservazione dopo l'attivazione
+            observer.unobserve(entry.target);
+        }
+    });
+}, {
+    threshold: 0.1 // Avvia l'animazione quando il 10% dell'elemento è visibile
+});
+
+// Aggiunge ogni elemento all'osservatore
+fadeElements.forEach(element => {
+    observer.observe(element);
+});
+    </script>
 
 
 
