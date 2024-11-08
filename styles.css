@@ -1,5 +1,4 @@
-/* path/to/your/style.css */
-/* font Playfair Display per i titoli e Raleway per i testi */
+
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
@@ -188,4 +187,85 @@ a:hover {
 
 .carousel{
     box-shadow: 0 4px 20px rgba(255, 251, 251, 0.9); /* Ombra per effetto gloss */
+}
+
+
+
+/* animazioni */
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.fade-in-right {
+    animation: fadeInRight 0.5s ease-in-out forwards;
+}
+
+
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.fade-in-left {
+    animation: fadeInLeft 0.5s ease-in-out forwards;
+}
+
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in-up {
+    animation: fadeInUp 0.5s ease-in-out forwards;
+}
+
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in-down {
+    animation: fadeInDown 0.5s ease-in-out forwards;
+}
+
+
+.fade-in-right,
+.fade-in-left,
+.fade-in-up,
+.fade-in-down {
+    opacity: 0; /* Nascondi inizialmente */
+    transition: opacity 0.5s ease-in-out;
+}
+
+.animate {
+    opacity: 1; /* Mostra l'elemento quando è visibile */
 }
